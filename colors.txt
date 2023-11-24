@@ -1,0 +1,4 @@
+Orange - #D18700 , rgb(209, 135, 0)
+Green - #355E3B , rgb(53, 94, 59)
+Blackish - #272526, rgb(39, 37, 38)
+Whitish - #f7f2f6, rgb(247, 242, 246)

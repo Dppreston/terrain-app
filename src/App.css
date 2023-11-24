@@ -1,0 +1,19 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-background: #fffffd;
+  --alt-background: #0f2532;
+  --white-text: #fffffd;
+  --black-text: #0f2532;
+  --main-border: #0f2532;
+  --blue-text: #496dad;
+  --dark-blue: #496dad;
+  --light-blue: #9cc9ef;
+  --main-background-op: rgba(255, 255, 253, 0.5);
+  --main-font: "Lato", sans-serif;
+}

@@ -1,0 +1,137 @@
+/* footer email */
+
+.email-banner-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  background-color: #f7f2f6;
+}
+
+.email-content {
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+.email-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.email-input {
+  padding: 10px;
+}
+
+/* footer nav */
+
+.footer-nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 100px;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #f7f2f6;
+  margin: auto;
+}
+
+.footer-nav-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.footer-nav-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.footer-nav-alternate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.footer-nav-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-nav-btn {
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* color: var(--dark-blue); */
+}
+
+/* footer socials */
+
+.footer-socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0 50px 0;
+  font-size: 3rem;
+  border-top: 1px solid var(--dark-blue);
+}
+
+.footer-socials-container i {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+/* footer logo and copyright */
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 50px 0;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-copyright-statement {
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .footer-nav-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer-nav-main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .footer-nav-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-copyright-statement {
+    text-align: center;
+    padding: 25px 0 0 0;
+  }
+}
