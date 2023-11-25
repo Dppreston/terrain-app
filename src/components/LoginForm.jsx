@@ -48,7 +48,7 @@ function LoginForm() {
     };
 
     await axios
-      .post("https://terrain-backend.onrender.com/users", postData)
+      .post("https://terrain-app-production.up.railway.app/users", postData)
       .then((res) => setError(<p>{res.data}</p>));
   };
 
