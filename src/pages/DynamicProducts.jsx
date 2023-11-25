@@ -13,7 +13,6 @@ function DynamicProducts(props) {
 
   //params
   let { cat } = useParams();
-  console.log(cat);
 
   function childSort(data) {
     setSelectedFilter(data);

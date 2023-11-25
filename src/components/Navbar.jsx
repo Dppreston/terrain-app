@@ -187,7 +187,6 @@ function Navbar({ child, childTitle }) {
   useEffect(() => {
     handleSearch();
     searchQuery();
-    console.log(query);
   }, [query]);
 
   return (
