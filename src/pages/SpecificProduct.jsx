@@ -12,7 +12,7 @@ function SpecificProduct() {
   const fetchSpecific = async () => {
     try {
       const res = await axios.get(
-        `https://terrain-fishing-co.onrender.com/${cat}/${specific}`
+        `https://terrain-app-production.up.railway.app/${cat}/${specific}`
       );
       setProduct(res.data);
     } catch (err) {
