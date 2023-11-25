@@ -175,9 +175,7 @@ function Navbar({ child, childTitle }) {
 
   const searchQuery = async () => {
     try {
-      const res = await axios.get(
-        `https://terrain-app-production.up.railway.app/products/?q=${query}`
-      );
+      const res = await axios.get(`http://localhost:8080/products/?q=${query}`);
       setSearchData(res.data);
     } catch (error) {
       console.log(error);

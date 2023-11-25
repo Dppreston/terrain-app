@@ -21,9 +21,7 @@ function DynamicProducts(props) {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get(
-        `https://terrain-app-production.up.railway.app/products/${cat}`
-      );
+      const res = await axios.get(`http://localhost:8080/products/${cat}`);
       setData(res.data);
     } catch (err) {
       console.log(err);
@@ -39,7 +37,7 @@ function DynamicProducts(props) {
   const handleSort = async () => {
     try {
       const res = await axios.get(
-        `https://terrain-app-production.up.railway.app/products/${cat}/?price=${selectedFilter}`
+        `http://localhost:8080/products/${cat}/?price=${selectedFilter}`
       );
       setData(res.data);
     } catch (err) {

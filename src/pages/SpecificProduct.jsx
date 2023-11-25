@@ -11,9 +11,7 @@ function SpecificProduct() {
 
   const fetchSpecific = async () => {
     try {
-      const res = await axios.get(
-        `https://terrain-app-production.up.railway.app/${cat}/${specific}`
-      );
+      const res = await axios.get(`http://localhost:8080/${cat}/${specific}`);
       setProduct(res.data);
     } catch (err) {
       console.log(err);

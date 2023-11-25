@@ -48,7 +48,7 @@ function LoginForm() {
     };
 
     await axios
-      .post("https://terrain-app-production.up.railway.app/users", postData)
+      .post("http://localhost:8080/users", postData)
       .then((res) => setError(<p>{res.data}</p>));
   };
 

@@ -14,7 +14,7 @@ function ProductFilter(props) {
   const filterQuery = async () => {
     try {
       const res = await axios.get(
-        `https://terrain-app-production.up.railway.app/rods?brand=${selectedBrand}`,
+        `http://localhost:8080/rods?brand=${selectedBrand}`,
         {
           params: {
             brand: selectedBrand,
