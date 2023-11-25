@@ -430,6 +430,10 @@
     height: 30px;
   }
 
+  .searchbar-container input {
+    font-size: 0.8rem;
+  }
+
   .search-dropdown-container {
     width: 85%;
     top: 235px;

@@ -138,6 +138,7 @@
   height: 410px;
   /* box-shadow: 4px 4px 4px 4px rgba(39, 37, 38, 0.2); */
   padding: 20px;
+  /* background-color: red; */
 }
 
 .subtotal-container {
@@ -145,6 +146,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  width: 100%;
 }
 
 .subtotal {
@@ -236,5 +238,29 @@
 
   .empty-cart-subtitle {
     text-align: center;
+  }
+
+  .order-summary {
+    width: 100%;
+  }
+
+  .order-summary-container {
+    width: 90%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .mobile-item-wrapper {
+    width: 100%;
+  }
+
+  .cart-item-details {
+    text-align: center;
+  }
+
+  .cart-item-description-container {
+    width: 100%;
   }
 }
