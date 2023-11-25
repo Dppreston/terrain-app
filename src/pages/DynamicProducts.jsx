@@ -22,7 +22,7 @@ function DynamicProducts(props) {
   const fetchProducts = async () => {
     try {
       const res = await axios.get(
-        `https://terrain-app-production.up.railway.app/${cat}`
+        `https://terrain-app-production.up.railway.app/products/${cat}`
       );
       setData(res.data);
     } catch (err) {

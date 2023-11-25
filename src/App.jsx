@@ -2,7 +2,7 @@ import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "../src/pages/Homepage";
-import Login from "./pages/Login";
+
 import Cart from "./pages/Cart";
 import DynamicProducts from "./pages/DynamicProducts";
 import { useState } from "react";
