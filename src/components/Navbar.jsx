@@ -175,7 +175,9 @@ function Navbar({ child, childTitle }) {
 
   const searchQuery = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/products/?q=${query}`);
+      const res = await axios.get(
+        `http://terrain-backend.onrender.com/products/?q=${query}`
+      );
       setSearchData(res.data);
     } catch (error) {
       console.log(error);

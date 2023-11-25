@@ -11,7 +11,9 @@ function SpecificProduct() {
 
   const fetchSpecific = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/${cat}/${specific}`);
+      const res = await axios.get(
+        `http://terrain-backend.onrender.com/${cat}/${specific}`
+      );
       setProduct(res.data);
     } catch (err) {
       console.log(err);

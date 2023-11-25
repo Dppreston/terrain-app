@@ -37,7 +37,7 @@ function DynamicProducts(props) {
   const handleSort = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8080/products/${cat}/?price=${selectedFilter}`
+        `http://terrain-backend.onrender.com/products/${cat}/?price=${selectedFilter}`
       );
       setData(res.data);
     } catch (err) {
