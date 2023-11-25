@@ -7,16 +7,17 @@ const axios = require("axios");
 
 router.get("/products", async (req, res) => {
   const products = schemas.Products;
-  const { q } = req.query;
-  const productData = await products
-    .find({ title: { $regex: q } })
-    .limit(5)
-    .exec();
-  if (q) {
-    res.send(JSON.stringify(productData));
-    res.end();
-  } else {
-    const productData = await products.find({}).exec();
+  // const { q } = req.query;
+  // const productData = await products
+  //   .find({ title: { $regex: q } })
+  //   .limit(5)
+  //   .exec();
+  // if (q) {
+  //   res.send(JSON.stringify(productData));
+  //   res.end();
+  // } else {
+  const productData = await products.find({}).exec();
+  if (productData) {
     res.send(JSON.stringify(productData));
     res.end();
   }
