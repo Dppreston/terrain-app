@@ -21,7 +21,9 @@ function DynamicProducts(props) {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/products/${cat}`);
+      const res = await axios.get(
+        `https://terrain-fishing-co.onrender.com/products/${cat}`
+      );
       setData(res.data);
     } catch (err) {
       console.log(err);
@@ -37,7 +39,7 @@ function DynamicProducts(props) {
   const handleSort = async () => {
     try {
       const res = await axios.get(
-        `http://terrain-backend.onrender.com/products/${cat}/?price=${selectedFilter}`
+        `https://terrain-fishing-co.onrender.com/products/${cat}/?price=${selectedFilter}`
       );
       setData(res.data);
     } catch (err) {

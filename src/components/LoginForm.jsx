@@ -48,7 +48,7 @@ function LoginForm() {
     };
 
     await axios
-      .post("http://terrain-backend.onrender.com/users", postData)
+      .post("https://terrain-fishing-co.onrender.com/users", postData)
       .then((res) => setError(<p>{res.data}</p>));
   };
 

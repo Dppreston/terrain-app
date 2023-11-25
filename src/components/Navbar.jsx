@@ -176,7 +176,7 @@ function Navbar({ child, childTitle }) {
   const searchQuery = async () => {
     try {
       const res = await axios.get(
-        `http://terrain-backend.onrender.com/products/?q=${query}`
+        `https://terrain-fishing-co.onrender.com/products/?q=${query}`
       );
       setSearchData(res.data);
     } catch (error) {

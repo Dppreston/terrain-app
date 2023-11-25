@@ -14,7 +14,7 @@ function ProductFilter(props) {
   const filterQuery = async () => {
     try {
       const res = await axios.get(
-        `http://terrain-backend.onrender.com/rods?brand=${selectedBrand}`,
+        `https://terrain-fishing-co.onrender.com/rods?brand=${selectedBrand}`,
         {
           params: {
             brand: selectedBrand,
