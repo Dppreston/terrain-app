@@ -220,7 +220,7 @@ function Navbar({ child, childTitle }) {
                 type="search"
                 className="searchbar"
                 id="search-bar"
-                placeholder="What you you like to find?"
+                placeholder="What would you like to find?"
                 onChange={handleSearch}
                 onClick={() => {
                   setIsToggled(!isToggled);
