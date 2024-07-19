@@ -2,13 +2,15 @@ import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "../src/pages/Homepage";
-
 import Cart from "./pages/Cart";
 import DynamicProducts from "./pages/DynamicProducts";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import SpecificProduct from "./pages/SpecificProduct";
 import Footer from "./components/Footer";
+import axios, { Axios } from "axios";
+
+Axios.defaults.baseURL = "https://terrain-app.onrender.com";
 
 function App() {
   const [itemCat, setItemCat] = useState("");
